@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Create Customer</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: #87CEFA;
+
+        }
+        form{
+
+        }
+        h4{
+            color: red;
+        }
+        h2{
+
+          margin: 0px;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+<header class="main-header">
+    <h1 class="animated flipInY">Metro Public Hospital</h1>
+</header>
+
+<!-- Main Navbar -->
+<nav class="main-nav animated flipInX">
+    <a href="index.html" class="active">
+        <i class="fa fa-home"></i> Home</a>
+
+    <div class="dropdown">
+        <a href="#">
+            <i class="fa fa-book-reader"></i> Patient Management<i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-list">
+            <a href="create.html">
+                <i class="fa fa-coffee"></i> Patient Registration</a>
+            <a href="Update.html">
+                <i class="fa fa-code"></i> Update Patient</a>
+            <a href="Delete.html">
+                <i class="fa fa-book"></i> Delete Patient</a>
+
+        </div>
+    </div>
+    <a href="Account_Management.html">
+        <i class="fa fa-image"></i> Pharmacy Management</a>
+    <a href="Status_Details.html">
+        <i class="fa fa-id-card"></i> Diagnostics</a>
+    <button class="btn">Logout</button>
+</nav>
+<!----------------------------------form---------------------------->
+
+<h2 align="center">Patient Registration</h2>
+<form>
+    <table align="center">
+        <tr>
+            <td>
+                <label>Patient SSN ID(*)</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Patient Name(*)</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Patient Age(*)</label>
+            </td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label> Date of Admission(*)</label>
+            </td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Type of Bed(*)</label>
+                <select>
+
+                    <option>Genral Ward</option>
+                    <option>Emergency Ward</option>
+                    <option>Double Sharing</option>
+                    <option>Personal Room</option>
+                    <option>ICU</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Address(*)</label>
+            </td>
+            <td>
+                <textarea rows="3" cols="30" name="comment" >Enter address here...</textarea>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>State(*)</label>
+                <select>
+
+                        <option>Maharashtra</option>
+                        <option>Punjab</option>
+                        <option>Gujrat</option>
+                        <option>Kerala</option>
+                        <option>Telangana</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>City(*)</label>
+                <select>
+
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Hyderabad</option>
+                    <option>Nagpur</option>
+                    <option>ahemdabad</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>(*)fields are required</h4>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="btn1" type="submit" value="Submit">
+            </td>
+            <td>
+                <input class="btn1" type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+<!-- Main footer
+<footer class="main-footer">
+    <h3>Copyright &copy; 2019 , Metro Public Hospital</h3>
+    <p>All Rights Reserved</p>
+    <p>Developed & Maintained by
+        <a href="#" target="_blank">
+            <i class="fa fa-users"></i> Metro Public Hospital</a>
+    </p>
+</footer>-->
+</body>
+</html>
